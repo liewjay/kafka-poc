@@ -3,6 +3,5 @@
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
   :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :plugins [[lein2-eclipse "2.0.0"]]
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [clj-kafka/clj-kafka "0.3.4"]])
