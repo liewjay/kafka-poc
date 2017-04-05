@@ -4,4 +4,4 @@
   :license {:name "Eclipse Public License"
   :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [clj-kafka/clj-kafka "0.3.4"]])
+                 [org.apache.kafka/kafka_2.11 "0.10.2.0"]])
