@@ -5,8 +5,10 @@
 (defn do-something
   "I don't do a whole lot."
   []
-  (let [brokers (zk/brokers {"zookeeper.connect" "172.27.122.91:2181"})]
+  (let [brokers (zk/brokers {"zookeeper.connect" "localhost:2181"})]
+    (println brokers)
     (println "Number of brokers" (count brokers))
     (println "First host" (:host (first brokers)))))
 
+t
 (do-something)
