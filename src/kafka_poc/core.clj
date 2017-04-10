@@ -2,7 +2,7 @@
   (:require [clojure.string :as str]))
 
 (defn consume-kafka
-  [group topic]
+  [topic group]
   (let [deserializer (->
                        org.apache.kafka.common.serialization.StringDeserializer
                        .getName)
@@ -27,4 +27,4 @@
            {:offset (.offset record)
             :value (.value record)}) records)))
 
-(consume-kafka "jaytest" "newt")
+(consume-kafka "jaytest" "newt" )
